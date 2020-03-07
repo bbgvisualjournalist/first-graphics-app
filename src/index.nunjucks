@@ -3,14 +3,17 @@
 {% import "_modules/link/link.nunjucks" as link %}
 
 
-{% block headline %}This is my hedline{% endblock %}
-{% block byline %}By Brian Williamson{% endblock %}
+{% block headline %}A South L.A. neighborhood grapples with a wave of violence{% endblock %}
+{% block byline %}By X, Y, and Z{% endblock %}
 {% block pubdate %}<time datetime="2020-03-07" publdate>March 7, 2020</time>{% endblock %}
 
 
 {% block content %}
-
+<section style="width: 100%;">
+<h3>One corner. Four killings</h3>
 <div id="map"></div>
+
+</section>
 
 <section style="width: 100%;">
 <h3>A South  L.A. neighborhood stands appart</h3>
