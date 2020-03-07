@@ -10,11 +10,16 @@
 
 {% block content %}
 
-<div class="charts">
-  <div class="inline-chart"><div class="chart" id="county-homicides"></div><h5>County homicides, 2000-2017</h5></div>
-  <div class="inline-chart"><div class="chart" id="harvard-park-homicides"></div><h5>Harvard Park homicides, 2000-2017</h5></div>
-</div>
+<div id="map"></div>
 
+<section style="width: 100%;">
+<h3>A South  L.A. neighborhood stands appart</h3>
+<p>Harvard Park's 2016 homicide total was its highest in 15 years.</p>
+<div class="charts">
+  <div class="inline-chart"><div class="chart" id="county-homicides"></div><h4>County homicides, 2000-2017</h4></div>
+  <div class="inline-chart"><div class="chart" id="harvard-park-homicides"></div><h4>Harvard Park homicides, 2000-2017</h4></div>
+</div>
+</section>
 
 <section>
 <h3>Lives lost in Harvard Park</h3>

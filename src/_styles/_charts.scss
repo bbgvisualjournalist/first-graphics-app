@@ -6,6 +6,9 @@
     rect {
       &.bar {
         fill: #86c7df;
+        &:hover {
+          fill: #990000;
+        }
       }
     }
 
@@ -26,5 +29,14 @@
         }
       }
     }
+  }
+}
+
+.charts {
+  width: 100%;
+  h4 {
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
   }
 }
