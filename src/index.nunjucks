@@ -5,4 +5,19 @@
 
 {% block headline %}This is my hedline{% endblock %}
 {% block byline %}By Brian Williamson{% endblock %}
-{% block pubdate %}<time datetime="2020-03-07" publdate>March 7, 2020</time>{% pubdate %}
+{% block pubdate %}<time datetime="2020-03-07" publdate>March 7, 2020</time>{% endblock %}
+
+
+{% block content %}
+{% for obj in site.data.harvard_park_homicides %}
+  <div class="card" style="width: 48%; margin-right: 1%; display: inline-block;">
+    <h3>{{ obj.first_name }} {{ obj.last_name}}</h3>
+    <ul>
+      <li><strong>Age:</strong> {{ obj.age }}</li>
+      <li><strong>Gender:</strong> {{ obj.gender }}</li>
+      <li><strong>Race:</strong> {{ obj.race }}</li>
+      {% if obj.image %}<img src="{{ obj.image }}"/>{% endif %}
+    </ul>
+  </div>
+{% endfor %}
+{% endblock %}
