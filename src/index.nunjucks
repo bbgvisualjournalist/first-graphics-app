@@ -9,15 +9,15 @@
 
 
 {% block content %}
-{% for obj in site.data.harvard_park_homicides %}
-  <div class="card" style="width: 48%; margin-right: 1%; display: inline-block;">
-    <h3>{{ obj.first_name }} {{ obj.last_name}}</h3>
-    <ul>
-      <li><strong>Age:</strong> {{ obj.age }}</li>
-      <li><strong>Gender:</strong> {{ obj.gender }}</li>
-      <li><strong>Race:</strong> {{ obj.race }}</li>
-      {% if obj.image %}<img src="{{ obj.image }}"/>{% endif %}
-    </ul>
+<div class="card-columns">
+{% for obj in site.data.harvard_park_homicides | sort %}
+  <div class="card" style="margin-bottom: 20px;">
+    <div class="card-body">
+      {% if obj.image %}<img src="{{ obj.image }}" class="card-img-top" alt="{{obj.first_name}} {{obj.last_name}}"/>{% endif %}
+      <h5 class="card-title"><a href="https://homicide.latimes.com/post/{{ obj.slug }}/">{{ obj.first_name }} {{ obj.last_name}}</a></h5>
+      <p class="card-text">{{ obj.last_name }}, a {{ obj.age }}-year-old {{ obj.race }} {{ obj.gender }}, died in {{ obj.death_year}}.
+    </div>
   </div>
 {% endfor %}
+</div>
 {% endblock %}
