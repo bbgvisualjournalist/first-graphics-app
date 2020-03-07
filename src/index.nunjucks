@@ -2,20 +2,7 @@
 
 {% import "_modules/link/link.nunjucks" as link %}
 
-{% block content %}
-<div class="main-container">
-  <div class="yeogurt-info">
-    <h1>Welcome to Yeogurt!</h1>
-    <p>
-      Take a look at the {{link.content({
-        href: 'https://github.com/larsonjj/generator-yeogurt#yeogurt-generator---',
-        text: 'documentation'
-      })}} and start mixing up something awesome.
-    </p>
-    <p>
-      <img src="images/yeogurt-swirl.png" width="75px" class="logo" />
-    </p>
-  </div>
-</div>
-<code class="version">v3.1.2</code>
-{% endblock %}
+
+{% block headline %}This is my hedline{% endblock %}
+{% block byline %}By Brian Williamson{% endblock %}
+{% block pubdate %}<time datetime="2020-03-07" publdate>March 7, 2020</time>{% pubdate %}
