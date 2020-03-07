@@ -2,6 +2,7 @@
   "name": "first-graphics-app",
   "version": "0.0.1",
   "dependencies": {
+    "d3": "^5.15.0",
     "jquery": "~3.4.1",
     "normalize.css": "~8.0.1"
   },

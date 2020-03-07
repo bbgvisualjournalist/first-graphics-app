@@ -1,0 +1,30 @@
+.inline-chart {
+  display: inline-block;
+  width: 49%;
+
+  svg {
+    rect {
+      &.bar {
+        fill: #86c7df;
+      }
+    }
+
+    .axis {
+      path,
+      line {
+        stroke: #ccc;
+
+        &.domain {
+          display: none;
+        }
+      }
+      &.x {
+        .tick {
+          line {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
